@@ -27,6 +27,14 @@ function CharacterList () {
   const previousPage = e => {
     setPage(page - 1);
   }
+  // // hide previous button when no previous page exists
+  // let nextButton = document.getElementsByClassName('next');
+  // if(page === 1) {
+  //   nextButton.style.display = 'none';
+  // }
+  // const [showButton, setShowButton] = useState(true);
+  
+  // {page ===1 ? setShowButton(false)}
 
   return (
     <div>
@@ -36,8 +44,8 @@ function CharacterList () {
         })}
       </div>
       <div>
-        <button onClick={previousPage}>Previous</button>
-        <button onClick={nextPage}>Next</button>
+        <button className='next' onClick={previousPage}>Previous</button>
+        <button className='previous' onClick={nextPage}>Next</button>
         
       </div>
     </div>
