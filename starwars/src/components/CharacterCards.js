@@ -3,7 +3,6 @@ import './StarWars.css';
 
 function CharacterCards ({character}) {
 
-
   return(
     <div>
       <h2>{character.name}</h2>
